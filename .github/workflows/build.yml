@@ -29,10 +29,20 @@ jobs:
       # Checkout
       - name: Checkout
         uses: actions/checkout@v4
+      # Setup .NET SDK
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            7.0.402
       # Install docfx as .NET global tools
       - name: Install docfx
         run: |
           dotnet tool install docfx -g --version 2.70.0
+      # Print envrionment information
+      - name: Run docfx version
+        run: |
+          docfx --version
+          dotnet --info
       # Run `docfx metadata` command
       - name: Generate metadata
         run: |
