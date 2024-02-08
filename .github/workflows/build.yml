@@ -44,7 +44,6 @@ jobs:
       # Upload docfx output site
       - name: Upload docfx build results to artifacts
         uses: actions/upload-artifact@v4
-        if: matrix.os == 'ubuntu-latest'
         with:
           name: wwwroot
           path: docs/_site
