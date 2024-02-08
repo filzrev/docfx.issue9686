@@ -5,7 +5,7 @@ exports.postTransform = function (model) {
     var childrens = model.children[0].children;
 
     childrens.forEach(function (item) {
-       const regex = /[\w\d]+\s?=\s?(\d+),?/gm;
+       const regex = /[\w\d]+\s?=\s?(-?\d+),?/gm;
        var m = regex.exec(item.syntax.content[0].value);
        if(m !== null) {
         item._enum_value = parseInt(m[1]); 
