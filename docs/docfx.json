@@ -1,0 +1,49 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../src",
+          "files": [
+            "**/*.csproj",
+
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      // "modern",
+      //"templates/custom" 
+    ],
+    "globalMetadata": {
+      "_appName": "",
+      "_appTitle": "",
+      "_enableSearch": true,
+      "_noindex": true,
+      "pdf": true,
+      "pdfFooterTemplate": "<div style=\"width: 100%; font-size: 12px;\"><div style=\"text-align: center; padding: 0 2em\"><span class=\"pageNumber\"><\/span> \/ <span class=\"totalPages\"></span></div></div>"
+    }
+  }
+}
