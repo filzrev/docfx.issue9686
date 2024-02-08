@@ -35,7 +35,7 @@
     "template": [
       "default",
       // "modern",
-      //"templates/custom" 
+      "templates/custom" 
     ],
     "globalMetadata": {
       "_appName": "",
