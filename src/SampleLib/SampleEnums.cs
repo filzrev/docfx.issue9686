@@ -8,15 +8,15 @@ public enum SampleEnum1
     None,
     Enum1,
     Enum2,
-
 }
 
 /// <summary>
-/// Sample enum2
+/// Sample enum2 (with explicit value assignment)
 /// </summary>
 public enum SampleEnum2
 {
     None = 0,
-    Enum20 = 20,
-    Enum10 = 10,
+    EnumB = 0x01
+    EnumD = 0x02,
+    EnumA = 0x04,
 }
